@@ -4,6 +4,7 @@ const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
   try {
+  console.log("endpoint hit!");
     // Get all post and JOIN with user data
     const postData = await Post.findAll({
       include: [
